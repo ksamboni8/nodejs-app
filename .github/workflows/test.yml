@@ -8,4 +8,11 @@ jobs:
         runs-on: ubuntu-18.04
         steps: 
             - name: Show message
-              run: echo "Hello world"
+              run: echo "Hello world 2024-05-14"
+
+            - name:
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x'
+            - name: Testsetup node
+              run: node --version    
